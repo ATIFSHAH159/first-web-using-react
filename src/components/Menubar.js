@@ -3,6 +3,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import img7 from '../Images/navbarlogo.png'
+import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 function MenuBar()
 {
 return (
@@ -23,6 +25,10 @@ return (
         </NavDropdown>
         <Nav.Link href="#link">Contact Us</Nav.Link>
         <Nav.Link href="#link">About us</Nav.Link>
+        <Link to="/AdminLogin">
+        <Button>Admin Dashboard</Button>
+        </Link>
+  
       </Nav>
     </Navbar.Collapse>
   </Container>

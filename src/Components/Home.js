@@ -7,6 +7,7 @@ import img4 from '../Images/bedcard.png';
 import img5 from '../Images/sofacard.png';
 import img6 from '../Images/chaircard.png';
 import '../Assests/Home.css';
+import Footer from './Footer';
 function  Home(){
     return (
 <div>
@@ -63,6 +64,7 @@ Turn your house into a home that reflects your unique personality and values. Le
 </div>
 
 
+<Footer />
 
 </div>
     );

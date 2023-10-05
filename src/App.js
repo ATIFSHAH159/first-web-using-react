@@ -13,7 +13,9 @@ function App() {
 
   return (
     <div>
-      {shownavbar && <MenuBar />}
+         {/* // conditional rendering */}
+      {shownavbar && <MenuBar />} 
+   
      <Routes>
       <Route path="/"  element={<Home />}  />
       <Route path="/AdminLogin"  element={<AdminLogin />}  />

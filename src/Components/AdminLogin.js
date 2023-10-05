@@ -7,26 +7,24 @@ import DeleteForm from './Forms/Deleteform';
 import ViewForm from './Forms/ViewForm';
 
 function AdminLogin() {
-    const [showAddForm, setShowAddForm] = useState(false); // Initialize the state
+    const [showAddForm, setShowAddForm] = useState(false); // use state used for updating the state 
     const [showUpdateForm, setShowUpdateForm] = useState(false);
     const [showDeleteForm, setShowDeleteForm] = useState(false);
     const [showViewForm, setViewForm] = useState(false);
 
 
-    // Function to toggle the visibility of the "Add" form
+    // Function to toggle the visibility of the "Add,del,update,view" form used for on click
     const toggleAddForm = () => {
         setShowAddForm(true);
         setShowUpdateForm(false)
         setShowDeleteForm(false)
         setViewForm(false)
     };
-    // Function to toggle the visibility of the "Update" form
     const toggleUpdateForm = () => {
         setShowAddForm(false);
         setShowUpdateForm(true)
         setShowDeleteForm(false)
         setViewForm(false)
-
     };
     const toggleDeleteForm = () => {
         setShowAddForm(false);

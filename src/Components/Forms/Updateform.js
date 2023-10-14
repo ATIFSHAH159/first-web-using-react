@@ -8,6 +8,9 @@ function UpdateForm() {
                 <label for="name">Productname:</label>
                 <input type="text" id="name" name="name" required />
                 <br />
+                <label for="name">Product-id:</label>
+            <input type="text" id="name" name="name" required />
+            <br />
                 <label for="price">Price:</label>
                 <input type="number" id="price" name="price" required />
                 <br />

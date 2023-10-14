@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import img9 from '../Images/Adminlogo.png';
+import img7 from '../Images/Adminlogo.png';
 import '../Assests/Sidebar.css';
 import AddForm from '../Components/Forms/Addform';
 import UpdateForm from './Forms/Updateform';
@@ -7,7 +7,7 @@ import DeleteForm from './Forms/Deleteform';
 import ViewForm from './Forms/ViewForm';
 
 function AdminLogin() {
-    const [showAddForm, setShowAddForm] = useState(false); // use state used for updating the state 
+    const [showAddForm, setShowAddForm] = useState(false);
     const [showUpdateForm, setShowUpdateForm] = useState(false);
     const [showDeleteForm, setShowDeleteForm] = useState(false);
     const [showViewForm, setViewForm] = useState(false);
@@ -42,7 +42,9 @@ function AdminLogin() {
     return (
         <div className="container-fluid">
             <div className="row" style={{height: "20vh" }} >
-                <img src={img9} style={{ width: "100%", height: "20vh",padding:"0px"  }} alt="Admin Image" /></div>
+                <img src={img7} style={{ width: "100%", height: "20vh",padding:"0px"  }} alt="Admin Image" /></div>
+
+                
             <div className="row" style={{ height: "80vh" }}>
                 <div className="col-md-3" style={{  height: "100%" }}>
                     <aside className="sidebar">

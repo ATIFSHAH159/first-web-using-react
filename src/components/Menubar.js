@@ -6,7 +6,7 @@ import img7 from '../Images/Navlogo1.png';
 import {RiAdminFill} from 'react-icons/ri';
 import{AiOutlineHeart} from 'react-icons/ai';
 import{BsCart3,BsSearch} from 'react-icons/bs';
-import {Link} from 'react-router-dom';
+import {NavLink, Link} from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import '../Assests/Menubar.css';
@@ -38,20 +38,18 @@ return (
      <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ms-auto">
-        <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/Services">Services</Nav.Link>
-        <NavDropdown title="Products" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Beds">Beds</NavDropdown.Item>
-          <NavDropdown.Item href="/Sofa">
-            Sofa's
-          </NavDropdown.Item>
-          <NavDropdown.Item href="/chairs">Chairs</NavDropdown.Item>
+        <NavLink to='/' className='navelement'>Home</NavLink>
+        <NavLink to='/Services' className='navelement'>Services</NavLink>
+        <NavDropdown title="Products" id="basic-nav-dropdown"  >
+          <NavDropdown.Item><NavLink to='/Beds' className='navelement'>Beds</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to='/Sofa' className='navelement'>Sofa's</NavLink></NavDropdown.Item>
+          <NavDropdown.Item><NavLink to='/chairs' className='navelement'>Chairs</NavLink></NavDropdown.Item>
         </NavDropdown>
-        <Nav.Link href="/Contactus">Contact Us</Nav.Link>
-        <Nav.Link href="/Aboutus">About us</Nav.Link>
+        <NavLink to='/Contactus' className='navelement'>Contact Us</NavLink>
+        <NavLink to='/Aboutus' className='navelement'>About us</NavLink>
         {/* <Nav.Link href="/AdminLogin"><RiAdminFill size={"20px"}/></Nav.Link> */}
-        <Nav.Link href="/Wishlist"><AiOutlineHeart size={"20px"}/></Nav.Link>
-        <Nav.Link href="/Addtocart"><BsCart3 size={"20px"}/></Nav.Link>
+        <NavLink to='/Wishlist' className='navelement'><AiOutlineHeart size={"20px"}/></NavLink>
+        <NavLink to='/Addtocart' className='navelement'><BsCart3 size={"20px"}/></NavLink>
       
       </Nav>
     </Navbar.Collapse>

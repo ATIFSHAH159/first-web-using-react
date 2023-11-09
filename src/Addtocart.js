@@ -6,31 +6,29 @@ import Button from "react-bootstrap/Button";
 import { Context } from "./Components/contexts";
 
 function AddtoCart() {
-  const { selectedProduct } = useContext(Context);
+  const { cartitems } = useContext(Context);
 
-  console.log("selectedProduct", selectedProduct);
+  console.log("selectedProduct", cartitems);
 
   return (
-    <>
-      {selectedProduct && (
-        <Row xs={1} md={3} className="g-4">
-          <Col>
-            <Card>
-              <Card.Img
-                variant="top"
-                src={selectedProduct.Pic}
-                style={{ width: "100%", height: "40vh" }}
-              />
-              <Card.Body>
-                <Card.Title>{selectedProduct.Name}</Card.Title>
-                <Card.Text>{selectedProduct.price}</Card.Text>
-              </Card.Body>
-              <Button>Buy</Button>
-            </Card>
-          </Col>
-        </Row>
-      )}
-    </>
+    <Row xs={1} md={3} className="g-4">
+      {cartitems.map((item) => (
+        <Col key={item.id}>
+          <Card>
+            <Card.Img
+              variant="top"
+              src={item.Pic}
+              style={{ width: "100%", height: "40vh" }}
+            />
+            <Card.Body>
+              <Card.Title>{item.Name}</Card.Title>
+              <Card.Text>{item.price}</Card.Text>
+            </Card.Body>
+            <Button>Buy</Button>
+          </Card>
+        </Col>
+      ))}
+    </Row>
   );
 }
 

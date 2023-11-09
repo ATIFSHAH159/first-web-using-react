@@ -12,16 +12,9 @@ const Productscontext = ({ children }) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [wishlist , setwishlist]= useState([]);
 
-  console.log("product1", product1); 
 
-  const addcartitem = (product, id) => {
-    if (Array.isArray(product)) {
-      const filterData = product.find((data) => data.id === id);
-      if (filterData) {
-        setcartitems([...cartitems, filterData]);
-        setSelectedProduct(filterData); // Set the selected product
-      }
-    }
+  const handleAddToCart = (product ) => {
+    setcartitems([...cartitems, product]);
   };
   
 
@@ -34,7 +27,7 @@ const Productscontext = ({ children }) => {
         setproducts2,
         product3,
         setproducts3,
-        addcartitem,
+        handleAddToCart,
         cartitems,
         selectedProduct,
         setSelectedProduct,

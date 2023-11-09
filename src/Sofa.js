@@ -12,25 +12,35 @@ function Sofa() {
   const{product3}=useContext(Context)
 
     return (
-      <>
-        <Row xs={1} md={3} className="g-4">
+      <div>
+
+  <div style={{ width: '100%', height: '15vh', backgroundColor: '#858861', color: "white", textAlign: "center", fontSize: '30px', fontFamily: "sans-serif",borderRadius:'10px' }}>
+  <h1 style={{position:'relative',top:'20px'}}>WELCOME TO OUR SOFA's SECTION</h1>
+</div>
+<hr></hr>
+
+<div>
+        <Row xs={1} md={5} className="g-4">
         {
         product3.map((item, idx) => (
           <Col key={idx}>
-            <Card>
-              <Card.Img variant="top" src={item.Pic} style={{width:'100%',height:'40vh'}}/>
+            <Card style={{width:'80%',height:'50vh'}}>
+              <Card.Img variant="top" src={item.Pic} style={{width:'100%',height:'20vh'}}/>
               <Card.Body>
                 <Card.Title>{item.Name}</Card.Title>
                 <Card.Text>{item.price}</Card.Text>
               </Card.Body>
-              <Button>Buy</Button>
+              <Button style={{backgroundColor: '#858861'}}>Buy</Button>
             </Card>
           </Col>
         ))}
       </Row>
+      </div>
+
+
       <br></br>
       <Footer /> 
-      </>
+      </div>
     );
      
 }

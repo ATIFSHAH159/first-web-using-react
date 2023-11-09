@@ -6,4 +6,13 @@
     width: 150px; /* Adjust the width as needed */
     font-size: 14px; /* Adjust the font size as needed */
   }
-  
+.navelement{
+    text-decoration: none;
+    color: black;
+    margin-top: 03px;
+    margin: 10px;
+}
+#basic-nav-dropdown{
+    margin-top: 3px;
+    color: black;
+}

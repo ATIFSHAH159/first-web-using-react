@@ -1,3 +1,9 @@
 .bg-body-tertiary{
     background-color: #008080;
 }
+/* custom-search.css */
+.custom-search-input {
+    width: 150px; /* Adjust the width as needed */
+    font-size: 14px; /* Adjust the font size as needed */
+  }
+  

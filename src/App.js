@@ -10,6 +10,10 @@ import Contactus from "./Components/Contactus";
 import Sofa from "./Sofa";
 import Chairs from "./chairs";
 import Beds from "./Beds";
+import AddtoCart from "./Addtocart";
+import Services from "./Services";
+import Wishlist from "./Wishlist";
+import Faq from "./Faq";
 
 
 function App() {
@@ -18,21 +22,30 @@ function App() {
   const shownavbar = !location.pathname.includes("/AdminLogin");
 
   return (
+    
     <div>
          {/* // conditional rendering */}
       {shownavbar && <MenuBar />} 
-   
+       
+      
      <Routes>
       <Route path="/"  element={<Home />}  />
       <Route path="/Aboutus"  element={<Aboutus />}  />
       <Route path="/Beds"  element={<Beds />}  />
+      <Route path="/Addtocart"  element={<AddtoCart />}  />
       <Route path="/chairs"  element={<Chairs />}  />
       <Route path="/Sofa"  element={<Sofa />}  />
       <Route path="/Contactus"  element={<Contactus />}  />
       <Route path="/AdminLogin"  element={<AdminLogin />}  />
+      <Route path="/Services"  element={<Services />}  />
+      <Route path="/Wishlist"  element={<Wishlist />}  />
+      <Route path="/FAQ"  element={<Faq />}  />
+
     </Routes>
+   
 
     </div>
+
   );
 }
 

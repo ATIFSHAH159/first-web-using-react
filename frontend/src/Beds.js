@@ -77,7 +77,7 @@ function Beds() {
             <Card style={{backgroundColor:'black'}}>
               <Card.Img
                 variant="top"
-                src={item.pic}
+                src={`https://mydata-qt8r.onrender.com/${item.pic}`}
                 style={{ width: "100%", height: "40vh" }}
               />
               <Card.Body style={{backgroundColor:'#EBEDDF'}}>

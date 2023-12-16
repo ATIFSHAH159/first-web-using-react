@@ -9,7 +9,7 @@ function AdminHome(){
 
 return(
     <>
-    <div style={{backgroundColor:'#AEC6CF'}}>
+    <div style={{backgroundColor:'#fafafa'}}>
           <div className='Upperside'>
         <div className="welcome-message">
           <h3 style={{marginTop:'23px',marginLeft:'-220px'}}>Welcome Admin<FaHandsClapping fontSize={'30px'} style={{ color: 'yellow' }} /></h3>
@@ -19,7 +19,7 @@ return(
           <input type="text" placeholder="Search.." style={{ height: '35px', marginTop: '40px',width:'170px' }} />
           <button type="button" className="search-button"  style={{ marginTop: '27px' }}><BsSearch /></button>
         </div>
-        <div style={{marginTop:'30px',marginLeft:'85px',boxShadow:'0.5px 0.5px 2px 2px #929292'}}>
+        <div style={{marginTop:'30px',marginLeft:'85px',boxShadow:'0.5px 0.5px 2px 2px #929292',border:'2px solid black',height:'30px'}}>
           <DateTime />
         </div>
         <div className='buttons'>

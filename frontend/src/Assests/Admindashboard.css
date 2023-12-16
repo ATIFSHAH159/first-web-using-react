@@ -89,20 +89,25 @@ ul li a{
 
 }
  .forpicone{
-    width: 33.33%;
-    height: 40vh;
+    width: 28%;
+    height: 30vh;
+    margin-top: 30px;
     border: 2px solid black;
+    transform: rotate(05deg);
 }
 
 .forpictwo{
     width: 33.33%;
-    height: 40vh;
+    margin-left: 10px;
+    margin-top: 30px;
+    height: 30vh;
     border: 2px solid black;
 }
 
 .forpicthree{
     width: 33.33%;
-    height: 40vh;
+    margin-top: 30px;
+    height: 30vh;
     border: 2px solid black;
 } 
 

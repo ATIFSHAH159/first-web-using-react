@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url="http://localhost:5000";
+const url="https://mydata-qt8r.onrender.com";
 
 export const addfurniture=async (formdata)=>{
   return await  axios.post(`${url}/Forms/Addform`,formdata);

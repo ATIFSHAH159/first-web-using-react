@@ -35,7 +35,7 @@ const getProductDetail = async () => {
         productdata.map((item, idx) => (
           <Col key={idx}>
             <Card>
-              <Card.Img variant="top" src={item.pic} style={{width:'100%',height:'40vh'}}/>
+              <Card.Img variant="top" src={`https://mydata-qt8r.onrender.com/${item.pic}`} style={{width:'100%',height:'40vh'}}/>
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>{item.price}</Card.Text>

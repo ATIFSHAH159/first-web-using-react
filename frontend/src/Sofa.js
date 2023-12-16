@@ -39,7 +39,7 @@ function Sofa() {
         sofadata.map((item, idx) => (
           <Col key={idx}>
             <Card style={{width:'80%',height:'50vh'}}>
-              <Card.Img variant="top" src={item.pic} style={{width:'100%',height:'20vh'}}/>
+              <Card.Img variant="top" src={`https://mydata-qt8r.onrender.com/${item.pic}`} style={{width:'100%',height:'20vh'}}/>
               <Card.Body>
                 <Card.Title>{item.name}</Card.Title>
                 <Card.Text>{item.price}</Card.Text>
